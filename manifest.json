@@ -1,0 +1,25 @@
+{
+  "short_name": "abel's world",
+  "name": "abel's world - waiting for u...",
+  "icons": [
+    {
+      "src": "purple-planet-earth.gif",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/gif"
+    },
+    {
+      "src": "purple-planet-earth.gif",
+      "type": "image/gif",
+      "sizes": "192x192"
+    },
+    {
+      "src": "purple-planet-earth.gif",
+      "type": "image/gif",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#280859",
+  "background_color": "#280859"
+}
