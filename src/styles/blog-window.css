@@ -68,7 +68,7 @@ hr {
     image-rendering: pixelated;
 }
 
-.blogIcon:hover {
+#toolbar .r95_1bzq74l0:hover {
     box-shadow:
         inset 1px 1px 0px 1px var(--r95-color-borderLightest),
         inset 0 0 0 1px var(--r95-color-borderDark),
