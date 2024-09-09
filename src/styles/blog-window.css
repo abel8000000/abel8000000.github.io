@@ -58,7 +58,7 @@ hr {
     align-items: center;
     flex-direction: column;
     gap: 3px;
-    box-shadow: none !important; 
+    box-shadow: none;
     padding: 0px;
 }
 
