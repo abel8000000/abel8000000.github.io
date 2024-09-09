@@ -1,3 +1,80 @@
-.r95_1ct83mo2, .r95_1ct83mo6, .r95_1ct83mo3, .r95_1bzq74l0, .r95_1kpzw681, .desktopIcon {
+.r95_1ct83mo2, .r95_1ct83mo6, .r95_1ct83mo3, .r95_1bzq74l0, .r95_1kpzw681 {
+    /* Desktop icons, taskbar buttons */
     cursor: pointer;
+}
+
+.desktopIcon {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.desktopIcon img {
+    width: 48px;
+    height: 48px;
+}
+
+#blog-icon {
+    top: 25vh;
+    left: 15vw;
+}
+
+#thoughts-icon {
+    top: 25vh;
+    right: 15vw;
+}
+
+
+
+.taskbarIcon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    -webkit-user-select: none;
+    user-select: none;
+    padding-inline-start: var(--r95-space-6) !important;
+    margin: var(--r95-space-0);
+    padding-block: var(--r95-space-2);
+    padding-inline: var(--r95-space-6);
+    color: var(--r95-color-materialText);
+}
+
+.taskbarIcon img {
+    width: 32px;
+    height: 32px;
+    margin-right: var(--r95-space-10);
+    min-width: var(--r95-space-16);
+}
+
+@media (max-width: 768px) {
+    .r95_1kpzw682, .r95_1kpzw683 {
+        /* Window titlebar */
+        height: 24px;
+    }
+    .windowIcon {
+        width: 18px;
+        height: 18px;
+    }
+    .r95_1kpzw685 {
+        /* Window titlebar text */
+        font-size: 16px;
+    }
+    .r95_1kpzw680 {
+        /* Close window button */
+        width: 22px;
+        height: 19px;
+    }
+    .r95_1bzq74l0, .r95_1kpzw681 {
+        /* Buttons in general */
+        width: 100%;
+        height: 100%;
+    }
 }

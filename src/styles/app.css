@@ -7,54 +7,7 @@ html {
     overflow: hidden;
     height: 100vh;
     width: 100vw;
+    min-width: 300px;
+    min-height: 300px;
     margin: 0;
-}
-
-.desktopIcon {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    -webkit-user-select: none;
-    user-select: none;
-}
-
-.desktopIcon img {
-    width: 48px;
-    height: 48px;
-}
-
-#blog-icon {
-    top: 25vh;
-    left: 15vw;
-}
-
-#thoughts-icon {
-    top: 25vh;
-    right: 15vw;
-}
-
-.taskbarIcon {
-    position: relative;
-    display: flex;
-    align-items: center;
-    -webkit-user-select: none;
-    user-select: none;
-    padding-inline-start: var(--r95-space-6) !important;
-    margin: var(--r95-space-0);
-    padding-block: var(--r95-space-2);
-    padding-inline: var(--r95-space-6);
-    color: var(--r95-color-materialText);
-}
-
-.taskbarIcon img {
-    width: 32px;
-    height: 32px;
-    margin-right: var(--r95-space-10);
-    min-width: var(--r95-space-16);
 }
