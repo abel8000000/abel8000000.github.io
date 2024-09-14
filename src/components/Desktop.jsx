@@ -39,9 +39,7 @@ const Desktop = () => {
 
             {showBlogWindow && <Modal
                 width={isMobile ? '95vw' : '90vw'}
-                maxWidth="1280px"
                 height={isMobile ? '85vh' : '80vh'}
-                maxHeight="720px"
                 title="Blog"
                 zIndex={1}
                 icon=<img className='windowIcon' src={BlogIcon} alt='Blog' width={16} height={16} />

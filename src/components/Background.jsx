@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import '../styles/background.css';
 import purplePlanetEarth from '../assets/images/purple-planet-earth.gif';
 import myWorldMarquee from '../assets/images/my-world-marquee.png';
-import backgroundImage from '../assets/images/background.png';
+import backgroundImage from '../assets/images/desktop-background.png';
 
 const Background = () => {
     useEffect(() => {

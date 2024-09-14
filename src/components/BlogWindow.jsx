@@ -163,10 +163,14 @@ const BlogWindow = () => {
                     <span>Print</span>
                 </Button>
             </Frame>
-            <Frame bg="white" boxShadow="$in" h="90%" w="100%" padding="0px 5px">
-                <p>
-                    Blog
-                </p>
+            <Frame background="white" h="100%" w="100%">
+                <iframe
+                    src="https://abel8000000.github.io/blog/"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 'none' }}
+                    title="abel's blog"
+                />
             </Frame>
         </>
     );
