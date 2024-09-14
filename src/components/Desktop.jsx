@@ -39,11 +39,11 @@ const Desktop = () => {
 
             {showBlogWindow && <Modal
                 width={isMobile ? '95vw' : '90vw'}
-                height={isMobile ? '85vh' : '80vh'}
+                height={isMobile ? '85vh' : '90vh'}
                 title="Blog"
                 zIndex={1}
                 icon=<img className='windowIcon' src={BlogIcon} alt='Blog' width={16} height={16} />
-                defaultPosition={isMobile ? { x: 10, y: 10 } : { x: 60, y: 20 }}
+                defaultPosition={isMobile ? { x: 10, y: 10 } : { x: 60, y: -30 }}
                 onClose={handleCloseBlogWindow}
                 menu={[{
                     name: 'File',
