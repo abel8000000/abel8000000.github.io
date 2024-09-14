@@ -241,7 +241,7 @@ const BlogWindow = () => {
                 <label for="address">Address</label>
                 <form id="address-compound-input" className="inset-deep" onSubmit={handleAddressSubmit}>
                     {favicon && <img id="address-icon" width="16" height="16" src={favicon} alt="Favicon" />}
-                    <Input id='address' value={address} onChange={handleAddressChange} />
+                    <Input id='address' value={address} onChange={handleAddressChange} autoComplete="off"/>
                 </form>
             </Frame>
             <Frame bg="white" boxShadow="$in" h="100%" w="100%">
