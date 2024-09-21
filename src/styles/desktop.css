@@ -65,14 +65,12 @@
         /* Window titlebar text */
         font-size: 16px;
     }
-    .r95_1kpzw680 {
-        /* Close window button */
-        width: 22px;
-        height: 19px;
+    .r95_1kpzw681 {
+        /* Titlebar buttons */
+        height: 16px;
+        width: 16px;
     }
-    .r95_1bzq74l0, .r95_1kpzw681 {
-        /* Buttons in general */
-        width: 100%;
-        height: 100%;
+    .r95_1kpzw680 {
+        align-items: center;
     }
 }

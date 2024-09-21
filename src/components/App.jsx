@@ -9,15 +9,12 @@ import '../styles/app.css';
 // Import components
 import Background from './Background';
 import Desktop from './Desktop';
-import { ModalProvider } from '@react95/core';
 
 const App = () => {
     return (
         <>
-            <ModalProvider>
-                <Desktop />
-                <Background />
-            </ModalProvider>
+            <Desktop />
+            <Background />
         </>
     );
 };
