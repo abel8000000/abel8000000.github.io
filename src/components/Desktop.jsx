@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Button, Modal, List, Frame, TaskBar, TitleBar } from '@react95/core';
+import { Button, Modal, List, TaskBar, TitleBar } from '@react95/core';
 import BlogIcon from '../assets/images/blog-icon.png';
 import IeIcon from '../assets/images/ie-icon.png';
 import githubIcon from '../assets/images/github-icon.png';
 import instagramIcon from '../assets/images/instagram-icon.png';
 import '../styles/desktop.css';
 import BlogWindow from './BlogWindow.jsx';
+import ThoughtsWindow from './ThoughtsWindow.jsx';
 import FileMenu from './MenuBar/FileMenu.jsx';
 import EditMenu from './MenuBar/EditMenu.jsx';
 import ViewMenu from './MenuBar/ViewMenu.jsx';
@@ -77,9 +78,9 @@ const Desktop = () => {
                     list: <HelpMenu />
                 }]}
             >
-            <Modal.Content>
-                <BlogWindow />
-            </Modal.Content>
+                <Modal.Content>
+                    <BlogWindow />
+                </Modal.Content>
             </Modal>}
 
             {showThoughtsWindow && <Modal
@@ -97,12 +98,29 @@ const Desktop = () => {
                     <TitleBar.Restore key="restore" />,
                     <TitleBar.Close key="close" onClick={handleCloseThoughtsWindow} />,
                 ]}
+                menu={[{
+                    name: 'File',
+                    list: <FileMenu handleCloseBlogWindow={handleCloseThoughtsWindow} />
+                }, {
+                    name: 'Edit',
+                    list: <EditMenu />
+                }, {
+                    name: 'View',
+                    list: <ViewMenu selectedOption={selectedOption} />
+                }, {
+                    name: 'Favorites',
+                    list: <FavoritesMenu />
+                }, {
+                    name: 'Tools',
+                    list: <ToolsMenu />
+                }, {
+                    name: 'Help',
+                    list: <HelpMenu />
+                }]}
             >
-                <Frame bg="white" boxShadow="$in" h="100%" w="100%" padding="0px 5px">
-                    <p>
-                        Work in progress...
-                    </p>
-                </Frame>
+                <Modal.Content>
+                    <ThoughtsWindow />
+                </Modal.Content>
             </Modal>}
 
             <TaskBar
