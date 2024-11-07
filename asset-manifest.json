@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.15814122.css",
-    "main.js": "/static/js/main.e100872c.js",
+    "main.js": "/static/js/main.97a0d876.js",
     "static/media/purple-planet-earth.gif": "/static/media/purple-planet-earth.da820ec4378185168e33.gif",
     "static/media/desktop-background.png": "/static/media/desktop-background.c7a07d3ca4b11a920923.png",
     "static/media/my-world-marquee.png": "/static/media/my-world-marquee.d13cff9cec29a13ff2ca.png",
     "index.html": "/index.html",
     "main.15814122.css.map": "/static/css/main.15814122.css.map",
-    "main.e100872c.js.map": "/static/js/main.e100872c.js.map"
+    "main.97a0d876.js.map": "/static/js/main.97a0d876.js.map"
   },
   "entrypoints": [
     "static/css/main.15814122.css",
-    "static/js/main.e100872c.js"
+    "static/js/main.97a0d876.js"
   ]
 }
