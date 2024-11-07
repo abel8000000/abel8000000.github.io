@@ -85,9 +85,7 @@ const Desktop = () => {
 
             {showThoughtsWindow && <Modal
                 width={isMobile ? '95vw' : '90vw'}
-                maxWidth="1280px"
-                height={isMobile ? '85vh' : '80vh'}
-                maxHeight="720px"
+                height={isMobile ? '85vh' : '90vh'}
                 title="Thoughts"
                 zIndex={1}
                 dragOptions={{
