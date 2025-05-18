@@ -26,7 +26,7 @@ import BlogPrintIconColor from '../assets/blog-window-icons/blog-print-icon-colo
 const BlogWindow = () => {
     const [hoveredButton, setHoveredButton] = useState(null);
     const [iframeKey, setIframeKey] = useState(0);
-    const [iframeSrc, setIframeSrc] = useState("https://abel8000000.github.io/blog/");
+    const [iframeSrc, setIframeSrc] = useState("https://abel8000000.online/blog/");
     const [address, setAddress] = useState(iframeSrc);
     const [favicon, setFavicon] = useState(null);
     const iframeRef = useRef(null);
@@ -41,7 +41,7 @@ const BlogWindow = () => {
 
     const refreshIframe = () => {
         if (iframeSrc === "about:blank") {
-            setIframeSrc("https://abel8000000.github.io/blog/");
+            setIframeSrc("https://abel8000000.online/blog/");
         } else {
             setIframeKey(prevKey => prevKey + 1);
         }
@@ -52,7 +52,7 @@ const BlogWindow = () => {
     };
 
     const homeIframe = () => {
-        setIframeSrc("https://abel8000000.github.io/blog/");
+        setIframeSrc("https://abel8000000.online/blog/");
     };
 
     const handleAddressChange = (e) => {

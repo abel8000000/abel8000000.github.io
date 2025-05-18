@@ -26,7 +26,7 @@ import BlogPrintIconColor from '../assets/blog-window-icons/blog-print-icon-colo
 const ThoughtsWindow = () => {
     const [hoveredButton, setHoveredButton] = useState(null);
     const [iframeKey, setIframeKey] = useState(0);
-    const [iframeSrc, setIframeSrc] = useState("https://abel8000000.github.io/thoughts/");
+    const [iframeSrc, setIframeSrc] = useState("https://abel8000000.online/thoughts/");
     const [address, setAddress] = useState(iframeSrc);
     const [favicon, setFavicon] = useState(null);
     const iframeRef = useRef(null);
@@ -41,7 +41,7 @@ const ThoughtsWindow = () => {
 
     const refreshIframe = () => {
         if (iframeSrc === "about:blank") {
-            setIframeSrc("https://abel8000000.github.io/thoughts/");
+            setIframeSrc("https://abel8000000.online/thoughts/");
         } else {
             setIframeKey(prevKey => prevKey + 1);
         }
@@ -52,7 +52,7 @@ const ThoughtsWindow = () => {
     };
 
     const homeIframe = () => {
-        setIframeSrc("https://abel8000000.github.io/thoughts/");
+        setIframeSrc("https://abel8000000.online/thoughts/");
     };
 
     const handleAddressChange = (e) => {
